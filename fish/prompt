@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+
+import { prompt } from './prompt.d/prompt.mjs';
+import { loadConfig } from './prompt.d/load-config.mjs';
+
+loadConfig()
+    .then(prompt)
+    .then(line => process.stdout.write(line))
+    .then(() => process.exit(0));

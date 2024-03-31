@@ -1,0 +1,40 @@
+[user]
+    name = RIAstar
+    email = maxime@riastar.net
+
+[alias]
+    ai = add --interactive                              # open an interactive adding session
+    amend = !git add . && git commit --amend --no-edit  # add all changes to the stage and then amend last commit with those changes
+    b = branch -a                                       # list all branches including remote ones
+    bd = branch -D                                      # delete branch
+    br = branch                                         # branch
+    cam = !git add . && git commit -m                   # add all changes to the stage and commit
+    cm = commit -m                                      # commit with message
+    cb = checkout -b                                    # create branch
+    ci = commit                                         # commit
+    cl = clone                                          # clone
+    co = checkout                                       # checkout branch/commit/tag/whatevs
+    cp = cherry-pick                                    # cherry pick commits for merging
+    dc = diff --cached                                  # shows a diff of all your current changes against your last commit
+    fa = fetch --all --prune                            # fetch all branches and delete obsolete ones
+    l = log --oneline --graph --decorate                # terser log including branch graph
+    last = log -1 --stat                                # verbose log of last commit
+    lb = log origin/develop^1..HEAD --oneline           # log commits on this branch since it diverged from develop
+    ll = log --graph --abbrev-commit --decorate --all --format=format:"%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(dim white) - %an%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n %C(white)%s%C(reset)"
+                                                        # another terse log including branch graph
+    lg = log --graph --abbrev-commit --date=relative --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset'
+                                                        # another terse log including branch graph, commit date and user name
+    pf = push --force                                   # force push changes
+    r = remote add origin                               # set the remote (you do this only when you want to link your local git repo to an existing one in BitBucket)
+    s = status -sb                                      # terser status overview
+    st = status -sb                                     # same as 's'
+    track = push -u origin                              # link local branch to remote one and push commits to it
+    undo = reset --soft ^HEAD                           # undo your last commit (but keep local changes)
+    unstage = reset HEAD --                             # remove everything from the stage that is currently on it
+
+[diff]
+    tool = code
+
+[merge]
+    tool = code
+

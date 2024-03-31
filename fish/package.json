@@ -1,0 +1,13 @@
+{
+  "name": "@riastar/prompt",
+  "version": "1.0.0",
+  "author": {
+    "name": "RIAstar",
+    "email": "maxime@riastar.net"
+  },
+  "bin": "./prompt",
+  "type": "module",
+  "dependencies": {
+    "chalk": "^5.3.0"
+  }
+}
