@@ -22,7 +22,7 @@ fi
 if $INSTALL
 then
   echo -e "\n[dot] Installing system dependencies"
-  sudo dnf install eza fish yazi
+  sudo dnf install eza fish kitty yazi
 else
   echo -e "\n[dot] Updating system dependencies"
   sudo dnf update
@@ -32,6 +32,7 @@ if $INSTALL
 then
   echo -e "\n[dot] Symlinking dotfiles"
   ln -svf "$PWD/config/.gitconfig" ~
+  ln -svf "$PWD/config/kitty" ~/.config
   ln -svf "$PWD/config/yazi" ~/.config
   ln -svf "$PWD/fish" ~/.config
 fi
