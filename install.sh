@@ -21,11 +21,20 @@ fi
 
 if $INSTALL
 then
-  echo -e "\n[dot] Installing system dependencies"
+  echo -e "\n[dot] Installing system (dnf) dependencies"
   sudo dnf install eza fish kitty yazi
 else
-  echo -e "\n[dot] Updating system dependencies"
+  echo -e "\n[dot] Updating system (dnf) dependencies"
   sudo dnf update
+fi
+
+if $INSTALL
+then
+  echo -e "\n[dot] installing Flatpaks"
+  flatpak install flathub md.obsidian.Obsidian
+else
+  echo -e "\n[dot] Updating Flatpaks"
+  sudo flatpak update
 fi
 
 if $INSTALL

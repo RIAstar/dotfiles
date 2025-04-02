@@ -11,6 +11,9 @@ System programs
 - [kitty](https://sw.kovidgoyal.net/kitty) terminal emulator
 - [yazi](https://yazi-rs.github.io/) terminal file manager
 
+Flatpaks
+- [Obsidian](https://obsidian.md) notes
+
 Other stuff
 - fonts
   - [FiraCode Nerd font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode)
