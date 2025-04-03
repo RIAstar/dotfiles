@@ -22,7 +22,7 @@ fi
 if $INSTALL
 then
   echo -e "\n[dot] Installing system (dnf) dependencies"
-  sudo dnf install eza fzf fish kitty ripgrep yazi
+  sudo dnf install eza fzf fish kitty ripgrep yazi xsel
 else
   echo -e "\n[dot] Updating system (dnf) dependencies"
   sudo dnf update
