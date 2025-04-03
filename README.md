@@ -7,8 +7,10 @@ To update an existing system, run with `-u` flag.
 
 System programs
 - [eza](https://eza.rocks/) better `ls`
+- [fzf](https://junegunn.github.io/fzf) fuzzy finder
 - [fish](https://fishshell.com/) shell
 - [kitty](https://sw.kovidgoyal.net/kitty) terminal emulator
+- [ripgrep](https://github.com/BurntSushi/ripgrep) faster `grep`
 - [yazi](https://yazi-rs.github.io/) terminal file manager
 
 Flatpaks
