@@ -9,6 +9,14 @@ function fish_prompt
     ~/.config/fish/prompt "$status"
 end
 
+function vi -wrap=nvim --description 'Opens NeoVim instead of Vi, defaults to cwd'
+    if count $argv > /dev/null
+        nvim $argv
+    else
+        nvim .
+    end
+end
+
 function ll -wraps=eza --description 'Overrides normal ll to use eza instead'
     exa --long --git --icons --group-directories-first --no-permissions --no-user --time-style long-iso -a
 end
