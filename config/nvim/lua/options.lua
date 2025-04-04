@@ -29,7 +29,6 @@ vim.o.splitright = true
 vim.o.splitbelow = true
 
 vim.o.list = true
--- TODO looks like https://github.com/neovim/neovim/issues/20107 is still in progress
 vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 
 vim.o.inccommand = 'split'
