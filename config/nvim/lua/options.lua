@@ -1,5 +1,13 @@
 vim.o.termguicolors = true
 
+-- text width
+vim.o.textwidth = 120
+vim.o.colorcolumn = '120'
+vim.o.wrapmargin = 0
+vim.o.linebreak = true
+vim.o.breakindent = true
+vim.o.formatoptions = 'tcrqnj'
+
 -- line numbers
 vim.o.number = true
 vim.o.relativenumber = true
