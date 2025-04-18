@@ -31,7 +31,8 @@ To update an existing system, run with `-u` flag.
 - dev
   - [fnm](https://github.com/Schniz/fnm) Node version manager
   - [NeoVim](https://neovim.io/) Text/code editor
-    - [nvim-tree](https://github.com/nvim-tree/nvim-tree.lua)
-    - [oil](https://github.com/stevearc/oil.nvim)
+    - [blink.cmp](https://cmp.saghen.dev/) Completion
+    - [nvim-tree](https://github.com/nvim-tree/nvim-tree.lua) File tree
+    - [oil](https://github.com/stevearc/oil.nvim) File/dir nav + editing
       - [oil-git-status](https://github.com/refractalize/oil-git-status.nvim)
     - [telescope](https://github.com/nvim-telescope/telescope.nvim)
