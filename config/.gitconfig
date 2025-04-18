@@ -2,6 +2,9 @@
     name = RIAstar
     email = maxime@riastar.net
 
+[core]
+    editor = nvim
+
 [alias]
     ai = add --interactive                              # open an interactive adding session
     amend = !git add . && git commit --amend --no-edit  # add all changes to the stage and then amend last commit with those changes
@@ -33,8 +36,8 @@
     unstage = reset HEAD --                             # remove everything from the stage that is currently on it
 
 [diff]
-    tool = code
+    tool = nvim
 
 [merge]
-    tool = code
+    tool = nvim
 
