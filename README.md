@@ -4,8 +4,9 @@
 
 - clone
 - run `install.sh` from the project directory
+- reboot and run `after-reboot.sh`
 
-To update an existing system, run with `-u` flag.
+To update an existing system, run the install script with `-u` flag.
 
 ## Contents
 
@@ -24,15 +25,20 @@ To update an existing system, run with `-u` flag.
 
 - [Obsidian](https://obsidian.md) notes
 
-### Other stuff
+### Gnome extensions
 
-- fonts
-  - [FiraCode Nerd font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode)
-- dev
-  - [fnm](https://github.com/Schniz/fnm) Node version manager
-  - [NeoVim](https://neovim.io/) Text/code editor
-    - [blink.cmp](https://cmp.saghen.dev/) Completion
-    - [nvim-tree](https://github.com/nvim-tree/nvim-tree.lua) File tree
-    - [oil](https://github.com/stevearc/oil.nvim) File/dir nav + editing
-      - [oil-git-status](https://github.com/refractalize/oil-git-status.nvim)
-    - [telescope](https://github.com/nvim-telescope/telescope.nvim)
+- [gTile](https://github.com/gTile/gTile) Window tiling for Gnome
+
+### Fonts
+
+- [FiraCode Nerd font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode)
+
+### Dev
+
+- [fnm](https://github.com/Schniz/fnm) Node version manager
+- [NeoVim](https://neovim.io/) Text/code editor
+  - [blink.cmp](https://cmp.saghen.dev/) Completion
+  - [nvim-tree](https://github.com/nvim-tree/nvim-tree.lua) File tree
+  - [oil](https://github.com/stevearc/oil.nvim) File/dir nav + editing
+    - [oil-git-status](https://github.com/refractalize/oil-git-status.nvim)
+  - [telescope](https://github.com/nvim-telescope/telescope.nvim)
