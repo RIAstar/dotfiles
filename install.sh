@@ -54,5 +54,6 @@ then
 fi
 
 ./install/fonts.sh
+./install/gnome.sh
 ./install/gtile.sh
 ./install/neovim.sh
