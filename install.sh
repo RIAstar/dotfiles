@@ -31,6 +31,7 @@ fi
 if $INSTALL
 then
   echo -e "\n[dot] installing Flatpaks"
+  flatpak install flathub io.gitlab.librewolf-community
   flatpak install flathub md.obsidian.Obsidian
 else
   echo -e "\n[dot] Updating Flatpaks"
@@ -43,6 +44,7 @@ then
   ln -svf "$PWD/config/.gitconfig" ~
   ln -svf "$PWD/config/calibre/global.py.json" ~/.config/calibre
   ln -svf "$PWD/config/kitty" ~/.config
+  ln -svf "$PWD/config/librewolf/librewolf.overrides.cfg" ~/.var/app/io.gitlab.librewolf-community/.librewolf
   ln -svf "$PWD/config/nvim" ~/.config
   ln -svf "$PWD/config/yazi" ~/.config
   ln -svf "$PWD/fish" ~/.config

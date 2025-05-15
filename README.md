@@ -23,6 +23,7 @@ To update an existing system, run the install script with `-u` flag.
 
 ### Flatpaks
 
+- [LibreWolf](https://librewolf.net) Safe Firefox
 - [Obsidian](https://obsidian.md) notes
 
 ### Gnome extensions
