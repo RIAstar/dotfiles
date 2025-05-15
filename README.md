@@ -12,11 +12,13 @@ To update an existing system, run the install script with `-u` flag.
 
 ### System programs
 
+- [calibre](https://calibre-ebook.com) ebook library
 - [eza](https://eza.rocks/) better `ls`
 - [fd](https://github.com/sharkdp/fd) faster, simpler `find`
 - [fzf](https://junegunn.github.io/fzf) fuzzy finder
 - [fish](https://fishshell.com/) shell
 - [kitty](https://sw.kovidgoyal.net/kitty) terminal emulator
+- [mpv](https://mpv.io/) command line video player
 - [ripgrep](https://github.com/BurntSushi/ripgrep) faster `grep`
 - [xsel](https://github.com/kfish/xsel) command line clipboard manager
 - [yazi](https://yazi-rs.github.io/) terminal file manager
