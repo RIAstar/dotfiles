@@ -22,7 +22,7 @@ fi
 if $INSTALL
 then
   echo -e "\n[dot] Installing system (dnf) dependencies"
-  sudo dnf install eza fd fzf fish kitty ripgrep yazi xsel
+  sudo dnf install calibre eza fd fzf fish kitty ripgrep yazi xsel
 else
   echo -e "\n[dot] Updating system (dnf) dependencies"
   sudo dnf update
@@ -41,6 +41,7 @@ if $INSTALL
 then
   echo -e "\n[dot] Symlinking dotfiles"
   ln -svf "$PWD/config/.gitconfig" ~
+  ln -svf "$PWD/config/calibre/global.py.json" ~/.config/calibre
   ln -svf "$PWD/config/kitty" ~/.config
   ln -svf "$PWD/config/nvim" ~/.config
   ln -svf "$PWD/config/yazi" ~/.config
