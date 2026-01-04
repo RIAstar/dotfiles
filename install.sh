@@ -22,7 +22,8 @@ fi
 if $INSTALL
 then
   echo -e "\n[dot] Installing system (dnf) dependencies"
-  sudo dnf install calibre eza fd fzf fish kitty mpv ripgrep yazi xsel
+  sudo dnf copr enable scottames/ghostty
+  sudo dnf install calibre eza fd fzf fish ghostty kitty mpv ripgrep yazi xsel
 else
   echo -e "\n[dot] Updating system (dnf) dependencies"
   sudo dnf update
@@ -31,6 +32,10 @@ fi
 if $INSTALL
 then
   echo -e "\n[dot] installing Flatpaks"
+  flatpak install com.github.IsmaelMartinez.teams_for_linux
+  flatpak install com.spotify.Client
+  flatpak install io.github.janbar.noson
+  flatpak install io.github.ungoogled_software.ungoogled_chromium
   flatpak install flathub io.gitlab.librewolf-community
   flatpak install flathub md.obsidian.Obsidian
 else
