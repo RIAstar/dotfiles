@@ -1,10 +1,4 @@
-return {
-  'sainnhe/gruvbox-material',
-  lazy = false,
-  priority = 1000,
+vim.pack.add { 'https://github.com/sainnhe/gruvbox-material' }
 
-  config = function()
-    vim.g.gruvbox_material_enable_italic = true
-    vim.cmd.colorscheme 'gruvbox-material'
-  end,
-}
+vim.g.gruvbox_material_enable_italic = true
+vim.cmd.colorscheme 'gruvbox-material'

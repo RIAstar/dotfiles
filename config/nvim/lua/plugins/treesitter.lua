@@ -1,0 +1,27 @@
+return {
+  ensure_installed = {
+    'angular',
+    'bash',
+    'css',
+    'csv',
+    'diff',
+    'editorconfig',
+    'fish',
+    'gitignore',
+    'html',
+    'javascript',
+    'jsdoc',
+    'json',
+    'lua',
+    'luadoc',
+    'markdown',
+    'markdown_inline',
+    'typescript',
+    'vim',
+    'vimdoc',
+    'yaml',
+  },
+
+  highlight = { enable = true },
+  indent = { enable = true },
+}

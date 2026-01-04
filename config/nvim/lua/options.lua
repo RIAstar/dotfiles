@@ -1,54 +1,70 @@
-vim.o.termguicolors = true
+local opt = vim.opt
+
+opt.termguicolors = true -- Enable true colors
 
 -- text width
-vim.o.textwidth = 120
-vim.o.colorcolumn = '120'
-vim.o.wrapmargin = 0
-vim.o.linebreak = true
-vim.o.breakindent = true
-vim.o.formatoptions = 'tcrqnj'
+opt.textwidth = 120
+opt.colorcolumn = '120' -- Highlight column 120
+opt.wrapmargin = 0
+opt.linebreak = true
+opt.breakindent = true
+opt.formatoptions = 'tcrqnj'
 
 -- line numbers
-vim.o.number = true
-vim.o.relativenumber = true
+opt.number = true
+opt.relativenumber = true
 
-vim.o.mouse = 'a'
-vim.o.showmode = false
+-- default indentation rules
+opt.autoindent = true -- Enable auto indentation
+opt.expandtab = true -- Use spaces instead of tabs
+opt.tabstop = 2 -- Number of spaces for a tab
+opt.softtabstop = 2 -- Number of spaces for a tab when editing
+opt.shiftwidth = 2 -- Number of spaces for autoindent
+opt.shiftround = true -- Round indent to multiple of shiftwidth
+opt.breakindent = true -- wrapped lines are also indented
+
+opt.mouse = 'a'
+opt.showmode = false -- don't show the current mode; we have the cursor for that
 
 -- Sync clipboard between OS and Neovim.
 --  Schedule the setting after `UiEnter` because it can increase startup-time.
 vim.schedule(function()
-  vim.o.clipboard = 'unnamedplus'
+  opt.clipboard = 'unnamedplus'
 end)
 
-vim.o.breakindent = true
-vim.o.undofile = true
+opt.undodir = os.getenv 'HOME' .. '/.vim/undodir' -- Directory for undo files
+opt.undofile = true -- Enable persistent undo
 
 -- Case-insensitive searching UNLESS \C or one or more capital letters in the search term
-vim.o.ignorecase = true
-vim.o.smartcase = true
+opt.ignorecase = true
+opt.smartcase = true
+opt.hlsearch = true -- we have a key binding on <esc> to remove the highlights
 
-vim.o.signcolumn = 'yes'
+opt.signcolumn = 'yes'
 
-vim.o.updatetime = 250
-vim.o.timeoutlen = 300
+opt.swapfile = false -- Disable swap files
+opt.timeoutlen = 500 -- time allowed for key combos
 
-vim.o.splitright = true
-vim.o.splitbelow = true
+opt.splitright = true
+opt.splitbelow = true
 
-vim.o.list = true
-vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+opt.list = true
+opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 
-vim.o.inccommand = 'split'
+opt.inccommand = 'split'
+-- opt.inccommand = "nosplit" -- Shows the effects of a command incrementally in the buffer
 
 -- change cursor in insert and replace modes
-vim.o.guicursor = 'n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20'
+opt.guicursor = 'n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20'
 -- flash cursor to find it
-vim.o.cursorline = true
+opt.cursorline = true
 
 -- Minimal number of screen lines to keep above and below the cursor.
-vim.o.scrolloff = 10
+opt.scrolloff = 10
 
 -- if performing an operation that would fail due to unsaved changes in the buffer (like `:q`),
 -- instead raise a dialog asking if you wish to save the current file(s)
-vim.o.confirm = true
+opt.confirm = true
+
+-- completion
+opt.completeopt = { 'menuone', 'popup', 'noinsert' } -- Options for completion menu
