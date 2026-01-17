@@ -1,3 +1,8 @@
+> **Warning**
+Github repo archived !
+All my active github repos were migrated to codeberg.
+This one can now be found at https://codeberg.org/RIAstar/dotfiles
+
 # RIAstar dotfiles
 
 ## Install or update
