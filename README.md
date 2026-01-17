@@ -1,7 +1,7 @@
-> **Warning**
-Github repo archived !
-All my active github repos were migrated to codeberg.
-This one can now be found at https://codeberg.org/RIAstar/dotfiles
+> [!WARNING]
+> Github repo archived !  
+> All my active Github repos were migrated to [Codeberg](https://codeberg.org/).  
+> This one can now be found at [dotfile on Codeberg](https://codeberg.org/RIAstar/dotfiles)
 
 # RIAstar dotfiles
 
